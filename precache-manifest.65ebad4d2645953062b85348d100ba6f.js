@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff980f8d6c6ba8d37dc7c24f4ad4afe1",
+    "revision": "dc09d5ad8440d540ddd4c6e2566a696a",
     "url": "/justice-con/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/justice-con/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "896a10bc2786ad676c7b",
+    "revision": "f33060d1d2de58b74630",
     "url": "/justice-con/static/css/main.9a9aee67.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/justice-con/static/js/2.d79b5ba7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "896a10bc2786ad676c7b",
-    "url": "/justice-con/static/js/main.e1dac79c.chunk.js"
+    "revision": "f33060d1d2de58b74630",
+    "url": "/justice-con/static/js/main.e00e3b46.chunk.js"
   },
   {
     "revision": "14c8f7c69920d686744d",
