@@ -25,3 +25,16 @@ h1,h3 {
     text-decoration: none;
   }
 }
+
+.channel-wrapper {
+  display: inline-block;
+  margin: 16px;
+  .channel-logo {
+    height: 76px;
+    border-radius: 16px;
+    filter: grayscale(0.6);
+    &:hover {
+      filter: grayscale(0); 
+    }
+  }
+}
