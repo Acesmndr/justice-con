@@ -10,6 +10,7 @@ const TimelineElement = ({
   title,
   subtitle,
   description,
+  crisis,
 }) => (
   <VerticalTimelineElement
       key={id}
@@ -19,7 +20,7 @@ const TimelineElement = ({
       contentArrowStyle={{ borderRight: '7px solid #687175' }}
       date={to ? `${moment(from).format('MMMM Do, h:mm a')} - ${moment(to).format('h:mm a')}` : moment(from).format('MMMM Do, h:mm a') }
       iconStyle={{ backgroundColor: '#e69b35', backgroundSize: 'fit', color: '#fff' }}
-      icon={<img className="event-logo" src={require('../../icon.png')} alt="product" />}
+      icon={<img className="event-logo" src={crisis ? require('../../crisislogo.png') : require('../../icon.png')} alt="product" />}
     >
       <h3 className="vertical-timeline-element-title">{title}</h3>
       <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
