@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/justice-con/static/css/main.94b695f5.chunk.css",
-    "main.js": "/justice-con/static/js/main.d2f58896.chunk.js",
-    "main.js.map": "/justice-con/static/js/main.d2f58896.chunk.js.map",
+    "main.js": "/justice-con/static/js/main.c1e93c9d.chunk.js",
+    "main.js.map": "/justice-con/static/js/main.c1e93c9d.chunk.js.map",
     "runtime-main.js": "/justice-con/static/js/runtime-main.a8c7715a.js",
     "runtime-main.js.map": "/justice-con/static/js/runtime-main.a8c7715a.js.map",
     "static/css/2.ac1ab58b.chunk.css": "/justice-con/static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.fc195a8b.chunk.js": "/justice-con/static/js/2.fc195a8b.chunk.js",
-    "static/js/2.fc195a8b.chunk.js.map": "/justice-con/static/js/2.fc195a8b.chunk.js.map",
+    "static/js/2.8b5aad79.chunk.js": "/justice-con/static/js/2.8b5aad79.chunk.js",
+    "static/js/2.8b5aad79.chunk.js.map": "/justice-con/static/js/2.8b5aad79.chunk.js.map",
     "index.html": "/justice-con/index.html",
-    "precache-manifest.906926fd321252d93325bf39d50232ab.js": "/justice-con/precache-manifest.906926fd321252d93325bf39d50232ab.js",
+    "precache-manifest.f6ea1c980285afe54a3f4e85ed78fbb0.js": "/justice-con/precache-manifest.f6ea1c980285afe54a3f4e85ed78fbb0.js",
     "service-worker.js": "/justice-con/service-worker.js",
     "static/css/2.ac1ab58b.chunk.css.map": "/justice-con/static/css/2.ac1ab58b.chunk.css.map",
     "static/css/main.94b695f5.chunk.css.map": "/justice-con/static/css/main.94b695f5.chunk.css.map",
-    "static/js/2.fc195a8b.chunk.js.LICENSE.txt": "/justice-con/static/js/2.fc195a8b.chunk.js.LICENSE.txt",
+    "static/js/2.8b5aad79.chunk.js.LICENSE.txt": "/justice-con/static/js/2.8b5aad79.chunk.js.LICENSE.txt",
     "static/media/4Nerds.jpg": "/justice-con/static/media/4Nerds.0f92916c.jpg",
+    "static/media/ChrisWong.jpg": "/justice-con/static/media/ChrisWong.17b18a72.jpg",
     "static/media/FatalJay.jpg": "/justice-con/static/media/FatalJay.49687a0a.jpg",
     "static/media/FilmGob.jpg": "/justice-con/static/media/FilmGob.45cd8cfc.jpg",
     "static/media/FilmJunkie.jpg": "/justice-con/static/media/FilmJunkie.7e5bb86d.jpg",
@@ -31,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.a8c7715a.js",
     "static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.fc195a8b.chunk.js",
+    "static/js/2.8b5aad79.chunk.js",
     "static/css/main.94b695f5.chunk.css",
-    "static/js/main.d2f58896.chunk.js"
+    "static/js/main.c1e93c9d.chunk.js"
   ]
 }

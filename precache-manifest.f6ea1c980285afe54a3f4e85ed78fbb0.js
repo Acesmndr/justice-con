@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad276b782764efec6e93d4ed9143ca1e",
+    "revision": "f46927068d59e87e984561e9da320b70",
     "url": "/justice-con/index.html"
   },
   {
-    "revision": "5372bcd1986c4afc7f60",
+    "revision": "9b2e8fd8c268f641d1a0",
     "url": "/justice-con/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "822ebf0e525a9cd3449b",
+    "revision": "b3881233423932edd50d",
     "url": "/justice-con/static/css/main.94b695f5.chunk.css"
   },
   {
-    "revision": "5372bcd1986c4afc7f60",
-    "url": "/justice-con/static/js/2.fc195a8b.chunk.js"
+    "revision": "9b2e8fd8c268f641d1a0",
+    "url": "/justice-con/static/js/2.8b5aad79.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/justice-con/static/js/2.fc195a8b.chunk.js.LICENSE.txt"
+    "url": "/justice-con/static/js/2.8b5aad79.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "822ebf0e525a9cd3449b",
-    "url": "/justice-con/static/js/main.d2f58896.chunk.js"
+    "revision": "b3881233423932edd50d",
+    "url": "/justice-con/static/js/main.c1e93c9d.chunk.js"
   },
   {
     "revision": "14c8f7c69920d686744d",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0f92916ce8e927db22ee3cd323a74201",
     "url": "/justice-con/static/media/4Nerds.0f92916c.jpg"
+  },
+  {
+    "revision": "17b18a725a511cbd5b063ab068b46c23",
+    "url": "/justice-con/static/media/ChrisWong.17b18a72.jpg"
   },
   {
     "revision": "49687a0a261f667daa9a18f5b9216e27",
