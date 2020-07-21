@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/justice-con/precache-manifest.3907a764de57b99def84774cc1cc6cb5.js"
+  "/justice-con/precache-manifest.a09648ff7782e81767d4858464f2d326.js"
 );
 
 self.addEventListener('message', (event) => {
