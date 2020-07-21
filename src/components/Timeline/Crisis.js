@@ -13,11 +13,12 @@ const CRISIS_DAY_ONE = [{
 },{
   from: 'Sat, 25 Jul 2020 09:00:00 EST-0400',
   to: 'Sat, 25 Jul 2020 12:00:00 EST-0400',
-  title: '4Nerds',
+  title: '4Nerds w/ Subjective Reviews',
   subtitle: 'Ft Robert Mayer Burnett',
   description: <>Hosted by: Nerdy in Many ways
     <div>
       <ChannelImage name='4Nerds' />
+      <ChannelImage name='SubjectiveReviews' />
     </div>
   </>
 }, {
