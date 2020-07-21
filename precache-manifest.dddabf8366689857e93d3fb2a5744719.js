@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f46927068d59e87e984561e9da320b70",
+    "revision": "fdc9f048ddf1600525c8e2c16b447264",
     "url": "/justice-con/index.html"
   },
   {
-    "revision": "9b2e8fd8c268f641d1a0",
+    "revision": "7e0e7fd5a3ac6034fdea",
     "url": "/justice-con/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "b3881233423932edd50d",
-    "url": "/justice-con/static/css/main.94b695f5.chunk.css"
+    "revision": "b687fead187dfb91df2e",
+    "url": "/justice-con/static/css/main.fd23fb83.chunk.css"
   },
   {
-    "revision": "9b2e8fd8c268f641d1a0",
-    "url": "/justice-con/static/js/2.8b5aad79.chunk.js"
+    "revision": "7e0e7fd5a3ac6034fdea",
+    "url": "/justice-con/static/js/2.5f23107a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/justice-con/static/js/2.8b5aad79.chunk.js.LICENSE.txt"
+    "url": "/justice-con/static/js/2.5f23107a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b3881233423932edd50d",
-    "url": "/justice-con/static/js/main.c1e93c9d.chunk.js"
+    "revision": "b687fead187dfb91df2e",
+    "url": "/justice-con/static/js/main.f4599645.chunk.js"
   },
   {
     "revision": "14c8f7c69920d686744d",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0f92916ce8e927db22ee3cd323a74201",
     "url": "/justice-con/static/media/4Nerds.0f92916c.jpg"
+  },
+  {
+    "revision": "918c49bb7c08819fa8c477086a878ec5",
+    "url": "/justice-con/static/media/AnthonySherfield.918c49bb.jpg"
   },
   {
     "revision": "17b18a725a511cbd5b063ab068b46c23",
@@ -53,7 +57,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "178fcf009743533ab6c25f42a0e4c1ac",
-    "url": "/justice-con/static/media/LuisCenteno.178fcf00.jpg"
+    "url": "/justice-con/static/media/LouisCenteno.178fcf00.jpg"
   },
   {
     "revision": "19f8f7bc50843c1a22a55c0008cd8251",
