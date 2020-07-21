@@ -56,7 +56,7 @@ const createJusticeConDay2Elements = () => {
     from: 'Sun, 26 Jul 2020 17:15:00 GMT+0100',
     to: 'Sun, 26 Jul 2020 18:15:00 GMT+0100',
     title: 'Deborah Snyder and Snyder\'s Amazons',
-    subtitle: <>Deborah Snyder, <LinkElement title='CaresDaniella' />, <LinkElement title='ChicCattLady2' /></>
+    subtitle: <>Deborah Snyder, <LinkElement title='CaresDaniella' />, <LinkElement title='ChicCattLady2' /> & <LinkElement title='FuriesNah' /></>
   }, {
     from: 'Sun, 26 Jul 2020 18:30:00 GMT+0100',
     to: 'Sun, 26 Jul 2020 19:30:00 GMT+0100',
