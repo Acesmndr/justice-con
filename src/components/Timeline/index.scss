@@ -15,6 +15,14 @@ h4.vertical-timeline-element-subtitle {
   }
 }
 
+.vertical-timeline-element-description {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 .event-logo {
   width: inherit;
 }

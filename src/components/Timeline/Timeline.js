@@ -2,9 +2,8 @@ import React from 'react';
 import { VerticalTimeline }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import './index.scss';
-import { createCrisisDay1Elements, createCrisisDay2Elements } from './Crisis';
-import { createJusticeConDay1Elements, createJusticeConDay2Elements } from './JusticeCon';
-
+import { createCrisisElements } from './Crisis';
+import { createJusticeConElements } from './JusticeCon';
 
 const Timeline = ({crisis}) => {
   if (crisis) {
@@ -12,11 +11,11 @@ const Timeline = ({crisis}) => {
       <>
         <h1><a name="day1" href="none" className="schedule-link"> Day One </a></h1>
         <VerticalTimeline>
-          {createCrisisDay1Elements()}  
+          {createCrisisElements(1)}  
         </VerticalTimeline>
         <h1><a name="day2" href="none" className="schedule-link"> Day Two </a></h1>
         <VerticalTimeline>
-          {createCrisisDay2Elements()}  
+          {createCrisisElements(2)}  
         </VerticalTimeline>
       </>
     );
@@ -25,11 +24,11 @@ const Timeline = ({crisis}) => {
     <>
       <h1><a name="day1" href="none" className="schedule-link"> Day One </a></h1>
       <VerticalTimeline>
-        {createJusticeConDay1Elements()}  
+        {createJusticeConElements(1)}  
       </VerticalTimeline>
       <h1><a name="day2" href="none" className="schedule-link"> Day Two </a></h1>
       <VerticalTimeline>
-        {createJusticeConDay2Elements()}  
+        {createJusticeConElements(2)}  
       </VerticalTimeline>
     </>
   );

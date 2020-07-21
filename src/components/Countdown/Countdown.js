@@ -2,6 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import './index.scss';
 import Timeline from '../Timeline/Timeline';
+import CurrentlyRunning from '../Timeline/CurrentRunning';
 
 const Countdown = ({ forDate, crisis }) => {
   const intervalRef = React.useRef(null);
@@ -41,14 +42,14 @@ const Countdown = ({ forDate, crisis }) => {
       <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
           <div className='countdown-wrapper'>
             <>
-              {crisis ? <>Live right now</> : <a href="https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A" target="_blank" rel="noopener noreferrer">Live on youtube! Click here to continue</a>}
+              <CurrentlyRunning crisis={crisis} />
             </>
           </div>
+          <h1 className="arrow">↓</h1>
       </div>
-      <Timeline />
+      <Timeline crisis={crisis} />
     </div>);
   }
-  
   
   return (
     <div style={{ width: '80vw' }}>

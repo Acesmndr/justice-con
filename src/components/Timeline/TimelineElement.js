@@ -24,9 +24,9 @@ const TimelineElement = ({
     >
       <h3 className="vertical-timeline-element-title">{title}</h3>
       <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
-      <p>
+      <div className="vertical-timeline-element-description">
         {description}
-      </p>
+      </div>
     </VerticalTimelineElement>
 );
 
