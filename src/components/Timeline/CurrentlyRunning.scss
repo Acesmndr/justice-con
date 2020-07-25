@@ -55,3 +55,8 @@
     filter: grayscale(0);
   }
 }
+
+.streaming-disabled {
+  pointer-events: none;
+  cursor: default;
+}

@@ -6,7 +6,6 @@ import './CurrentlyRunning.scss';
 
 const _findCurrentlyRunningSchedule = (schedule) => {
   const currentMoment = moment();
-  debugger;
   for (let i = 0; i < schedule.length; i++) {
     if(currentMoment.diff(moment(schedule[i].from), 'seconds') < 0) {
       return schedule[i - 1] || Object.assign({ upcoming: true }, schedule[0]);
@@ -17,16 +16,35 @@ const _findCurrentlyRunningSchedule = (schedule) => {
     if(i + 1 < schedule.length && currentMoment.diff(moment(schedule[i].from), 'seconds') < 0) {
       return Object.assign({ upcoming: true }, schedule[i+1]);
     }
-    return false;
   }
+  return false;
 }
 
 const CurrentlyRunning = ({ crisis }) => {
-  let schedule;
-  if(crisis) {
-    schedule = _findCurrentlyRunningSchedule(CRISIS_DAY_ONE) || _findCurrentlyRunningSchedule(CRISIS_DAY_TWO);
-  } else {
-    schedule = _findCurrentlyRunningSchedule(JC_DAY_ONE) || _findCurrentlyRunningSchedule(JC_DAY_TWO);
+  const [schedule, setSchedule] = React.useState(null);
+  const currentlyRunningRef = React.useRef(null);
+  React.useEffect(() => {
+    currentlyRunningRef.current = setInterval(() => {
+      if(crisis) {
+        setSchedule(_findCurrentlyRunningSchedule(CRISIS_DAY_ONE) || _findCurrentlyRunningSchedule(CRISIS_DAY_TWO));
+      } else {
+        setSchedule(_findCurrentlyRunningSchedule(JC_DAY_ONE) || _findCurrentlyRunningSchedule(JC_DAY_TWO));
+      }
+    }, 15000);
+
+    if(crisis) {
+      setSchedule(_findCurrentlyRunningSchedule(CRISIS_DAY_ONE) || _findCurrentlyRunningSchedule(CRISIS_DAY_TWO));
+    } else {
+      setSchedule(_findCurrentlyRunningSchedule(JC_DAY_ONE) || _findCurrentlyRunningSchedule(JC_DAY_TWO));
+    }
+
+    return () => {
+      currentlyRunningRef.current && clearInterval(currentlyRunningRef.current);
+    }
+  }, [crisis]);
+
+  if(!schedule) {
+    return null;
   }
 
   return <div className={`currently-running ${crisis ? 'crisis' : ''}`}>
@@ -35,7 +53,7 @@ const CurrentlyRunning = ({ crisis }) => {
     <div className="description">
       {schedule.description}
     </div>
-    <a href={crisis ? '/#' : 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">
+    <a href={crisis ? '/' : 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer" className={ crisis ? 'streaming-disabled' : '' }>
       {
         schedule.upcoming ?
           <div className="status">Up next</div> :
