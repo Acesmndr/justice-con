@@ -3,6 +3,7 @@ import moment from 'moment';
 import './index.scss';
 import Timeline from '../Timeline/Timeline';
 import CurrentlyRunning from '../Timeline/CurrentRunning';
+import { Link } from 'react-router-dom';
 
 const Countdown = ({ forDate, crisis }) => {
   const intervalRef = React.useRef(null);
@@ -38,6 +39,9 @@ const Countdown = ({ forDate, crisis }) => {
 
   if(moment(forDate).diff(moment(), 'seconds') < 0) {
     return (<div style={{ width: '80vw' }}>
+    <Link to={crisis ? "" : "cois"} className="link-right">
+      <img className="switch-logo" src={require(!crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
+    </Link>
     <div className='countdown-div'>
       <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
           <div className='countdown-wrapper'>
@@ -53,6 +57,9 @@ const Countdown = ({ forDate, crisis }) => {
   
   return (
     <div style={{ width: '80vw' }}>
+    <Link to={crisis ? "" : "cois"} className="link-right">
+      <img className="switch-logo" src={require(!crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
+    </Link>
     <div className='countdown-div'>
       <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
           <div className='countdown-wrapper'>

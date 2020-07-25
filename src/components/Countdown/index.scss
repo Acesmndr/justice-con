@@ -30,6 +30,16 @@ body {
   text-align: center;
 }
 
+.link-right {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  .switch-logo {
+    filter: drop-shadow(0px 0px 16px white);
+    height: 48px;
+  }
+}
+
 h1 {
   font-size: 75px;
   margin: 10px;
