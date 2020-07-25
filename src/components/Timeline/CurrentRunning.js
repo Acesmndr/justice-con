@@ -8,7 +8,7 @@ const _findCurrentlyRunningSchedule = (schedule) => {
   const currentMoment = moment();
   for (let i = 0; i < schedule.length; i++) {
     if(currentMoment.diff(moment(schedule[i].from), 'seconds') < 0) {
-      return schedule[i - 1] || Object.assign({ upcoming: true }, schedule[0]);
+      return Object.assign({ upcoming: true }, schedule[i]);
     }
     if(moment(schedule[i].to || moment(schedule[i].from).add(2, 'hours')).diff(currentMoment, 'seconds') > 0) {
       return schedule[i];
