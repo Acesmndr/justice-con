@@ -41,7 +41,7 @@ body {
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 40px;
   margin: 10px;
   font-family: 'Rowdies', sans-serif;
   text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
@@ -81,8 +81,28 @@ img.logo {
   border-radius: 10px;
   box-shadow: 4px 4px 12px 2px rgba(black, 0.30);
   padding: 40px 40px 30px;
+  .break {
+    flex-basis: 100%;
+    height: 0;
+    &.spacing-top {
+      margin-top: 40px;
+    }
+  }
+  .description {
+    color: black;
+    a {
+      font-weight: bold;
+      color: #424242;
+      text-decoration: none;
+    }
+  }
 }
 
+.jl-tshirt-logo {
+  margin: 0;
+  filter: drop-shadow(-2px 2px 6px black);
+  height: 120px;
+}
 .countdown-item {
   color: var(--color-text);
   font-size: 4rem;
@@ -119,6 +139,6 @@ img.logo {
   height: 100px;
 }
 
-.arrow {
-  margin-top: 120px;
+.countup-arrow {
+  margin-top: 0;
 }

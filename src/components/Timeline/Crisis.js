@@ -104,6 +104,7 @@ const CRISIS_DAY_TWO = [{
   </>,
 }, {
   from: 'Sun, 26 Jul 2020 22:00:00 GMT-0400',
+  to: 'Sun, 27 Jul 2020 00:00:00 GMT-0400',
   title: 'Light Cast',
   subtitle: 'Ft The Cultured Nerd',
   description: <>

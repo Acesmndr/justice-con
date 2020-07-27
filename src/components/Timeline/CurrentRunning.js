@@ -26,16 +26,16 @@ const CurrentlyRunning = ({ crisis }) => {
   React.useEffect(() => {
     currentlyRunningRef.current = setInterval(() => {
       if(crisis) {
-        setSchedule(_findCurrentlyRunningSchedule(CRISIS_DAY_ONE) || _findCurrentlyRunningSchedule(CRISIS_DAY_TWO));
+        setSchedule(_findCurrentlyRunningSchedule(CRISIS_DAY_ONE) || _findCurrentlyRunningSchedule(CRISIS_DAY_TWO) || { completed: true });
       } else {
-        setSchedule(_findCurrentlyRunningSchedule(JC_DAY_ONE) || _findCurrentlyRunningSchedule(JC_DAY_TWO));
+        setSchedule(_findCurrentlyRunningSchedule(JC_DAY_ONE) || _findCurrentlyRunningSchedule(JC_DAY_TWO) || { completed: true });
       }
     }, 15000);
 
     if(crisis) {
-      setSchedule(_findCurrentlyRunningSchedule(CRISIS_DAY_ONE) || _findCurrentlyRunningSchedule(CRISIS_DAY_TWO));
+      setSchedule(_findCurrentlyRunningSchedule(CRISIS_DAY_ONE) || _findCurrentlyRunningSchedule(CRISIS_DAY_TWO) || { completed: true });
     } else {
-      setSchedule(_findCurrentlyRunningSchedule(JC_DAY_ONE) || _findCurrentlyRunningSchedule(JC_DAY_TWO));
+      setSchedule(_findCurrentlyRunningSchedule(JC_DAY_ONE) || _findCurrentlyRunningSchedule(JC_DAY_TWO) || { completed: true });
     }
 
     return () => {
@@ -45,6 +45,11 @@ const CurrentlyRunning = ({ crisis }) => {
 
   if(!schedule) {
     return null;
+  }
+
+  if(schedule.completed === true) {
+    // eslint-disable-next-line no-restricted-globals
+    location.reload();
   }
 
   return <div className={`currently-running ${crisis ? 'crisis' : ''}`}>

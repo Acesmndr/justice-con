@@ -8,6 +8,7 @@ const TimelineElement = ({
   from,
   to,
   title,
+  link,
   subtitle,
   description,
   crisis,
@@ -22,7 +23,7 @@ const TimelineElement = ({
       iconStyle={{ backgroundColor: '#e69b35', backgroundSize: 'fit', color: '#fff' }}
       icon={<img className="event-logo" src={crisis ? require('../../crisislogo.png') : require('../../icon.png')} alt="product" />}
     >
-      <h3 className="vertical-timeline-element-title">{title}</h3>
+      <h3 className="vertical-timeline-element-title">{link ? <a href={link} target="_blank" rel="noopener noreferrer">{title}</a> : title}</h3>
       <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>
       <div className="vertical-timeline-element-description">
         {description}

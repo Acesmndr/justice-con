@@ -4,8 +4,9 @@ import './index.scss';
 import Timeline from '../Timeline/Timeline';
 import CurrentlyRunning from '../Timeline/CurrentRunning';
 import { Link } from 'react-router-dom';
+import Countup from '../Countup/Countup';
 
-const Countdown = ({ forDate, crisis }) => {
+const Countdown = ({ forDate, toDate, crisis }) => {
   const intervalRef = React.useRef(null);
   const [days, setDays] = React.useState(undefined);
   const [hours, setHours] = React.useState(undefined);
@@ -37,7 +38,10 @@ const Countdown = ({ forDate, crisis }) => {
     }
   }, [forDate]);
 
-  if(moment(forDate).diff(moment(), 'seconds') < 0) {
+  if (moment(forDate).diff(moment(), 'seconds') < 0) {
+    if (moment(toDate).diff(moment(), 'seconds') < 0) {
+      return <Countup toDate={toDate} crisis={crisis} />
+    }
     return (<div style={{ width: '80vw' }}>
     <Link to={crisis ? "" : "cois"} className="link-right">
       <img className="switch-logo" src={require(!crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
