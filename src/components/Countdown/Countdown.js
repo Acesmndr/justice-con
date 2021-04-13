@@ -82,6 +82,11 @@ const Countdown = ({ forDate, toDate }) => {
                   )}
               </div>
       <h3><a className="schedule-link" href="#day1">Apr 16</a><a className="schedule-link" href="#day2"> - </a><a className="schedule-link" href="#day3">18, 2021</a></h3>
+      <div>
+        <a data-tip="Jump to first day schedule" className="schedule-link-pin" href="#day1">1</a>
+        <a data-tip="Jump to second day schedule" className="schedule-link-pin" href="#day2">2</a>
+        <a data-tip="Jump to third day schedule" className="schedule-link-pin" href="#day3">3</a>
+      </div>
       <h1 className="arrow">↓</h1>
     </div>
     <Timeline />

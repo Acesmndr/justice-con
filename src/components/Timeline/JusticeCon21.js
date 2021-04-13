@@ -190,10 +190,10 @@ const JC_DAY_THREE = [{
 }, {
   from: 'Sun, 18 Apr 2021 14:45:00 GMT-0400',
   to: 'Sun, 18 Apr 2021 15:45:00 GMT-0400',
-  title: 'Spotlight on Deborah Snyder',
+  title: 'Spotlight on Deborah Snyder and Wesley Coller',
   link: '',
   hosts: ['Fatma Sawalim'],
-  guests: ['Debbie Snyder'],
+  guests: ['Debbie Snyder', 'Wesley Coller'],
 }, {
   from: 'Sun, 18 Apr 2021 17:30:00 GMT-0400',
   to: 'Sun, 18 Apr 2021 18:00:00 GMT-0400',
