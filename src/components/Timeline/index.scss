@@ -31,7 +31,8 @@ h4.vertical-timeline-element-subtitle {
   width: inherit;
 }
 
-h1,h3 {
+h1,
+h3 {
   a.schedule-link {
     color: white;
     text-decoration: none;
@@ -46,7 +47,86 @@ h1,h3 {
     border-radius: 16px;
     filter: grayscale(0.6);
     &:hover {
-      filter: grayscale(0); 
+      filter: grayscale(0);
+    }
+  }
+}
+
+.title {
+  font-size: 1.25rem;
+  background: #212121;
+  padding: 8px;
+  margin: -16px -16px 8px -16px;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (min-width: 1170px) {
+    margin: -24px -24px 8px -24px;
+  }
+}
+
+.event-details {
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  text-align: left;
+  margin: 16px;
+  border-radius: 5px;
+  background: linear-gradient(315deg, #6e97a5 0%, black 74%);
+  align-items: center;
+  .jc-event-logo {
+    transition: all 0.3s ease-in;
+    img {
+      height: 120px;
+      margin: 8px;
+      border-radius: 10px;
+      &:hover {
+        filter: hue-rotate(180deg);
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    & {
+      background: #171717c7;
+    }
+    .jc-event-logo {
+      display: none;
+    }
+  }
+
+  .hosts-and-guests {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 16px;
+    .host {
+      margin: 8px 0;
+      .host-title {
+        font-size: 10px;
+        margin-bottom: 2px;
+      }
+      .host-icon {
+        filter: invert(1);
+        width: 12px;
+        margin-right: 4px;
+      }
+    }
+    .guests {
+      margin: 4px 0;
+      .guest-title {
+        font-size: 10px;
+        margin-bottom: 2px;
+      }
+      .guest-icon {
+        filter: invert(1);
+        width: 12px;
+        margin-right: 4px;
+      }
     }
   }
 }
