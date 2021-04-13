@@ -5,7 +5,7 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 const convertToAddToCalendarUrl = ({ title, from, to, link }) => {
   const startTime = moment(from).format('YYYYMMDDTHHmmssZ');
   const endTime = moment(to).format('YYYYMMDDTHHmmssZ');
-  return encodeURI(`https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startTime}/${endTime}&text=Justice Con: ${title}&details=${link}`);
+  return encodeURI(`https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startTime}/${endTime}&text=Justice Con: ${title}&details=${link || 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'}`);
 };
 
 const TimelineElement = ({
@@ -13,7 +13,7 @@ const TimelineElement = ({
   from,
   to,
   title,
-  link = 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A',
+  link,
   guests,
   hosts,
 }) => {
@@ -30,7 +30,7 @@ const TimelineElement = ({
       icon={<img className="event-logo" src={require('../../icon.png')} alt="product" />}
     >
       <div className="title">
-        <a data-tip="Visit video link" href={link} target="_blank" rel="noopener noreferrer">
+        <a data-tip="Visit video link" href={link || 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">
           {title}
         </a>
       </div>
