@@ -2,7 +2,7 @@
   "name": "justice-con",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://acesmndr.github.io/justice-con",
+  "homepage": ".",
   "author": "acesmndr@gmail.com",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
