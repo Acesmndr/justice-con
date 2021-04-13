@@ -39,9 +39,21 @@
 
 .footer {
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .footer .developer {
   color: white;
+}
+
+.ace-of-spades {
+  width: 32px;
+  position: relative;
+  top: 16px;
+  left: 10px;
+  transition: transform 150ms linear;
+}
+
+.ace-of-spades:hover {
+  transform: rotate(20deg);
 }
