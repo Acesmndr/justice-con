@@ -1,5 +1,4 @@
 import React from 'react';
-import LinkElement from './LinkElement';
 import TimelineElement from './TimelineElement';
 
 const JC_DAY_ONE = [{

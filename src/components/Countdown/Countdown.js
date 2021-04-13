@@ -3,10 +3,9 @@ import moment from 'moment';
 import './index.scss';
 import Timeline from '../Timeline/Timeline';
 import CurrentlyRunning from '../Timeline/CurrentRunning';
-import { Link } from 'react-router-dom';
 import Countup from '../Countup/Countup';
 
-const Countdown = ({ forDate, toDate, crisis }) => {
+const Countdown = ({ forDate, toDate }) => {
   const intervalRef = React.useRef(null);
   const [days, setDays] = React.useState(undefined);
   const [hours, setHours] = React.useState(undefined);
@@ -40,29 +39,26 @@ const Countdown = ({ forDate, toDate, crisis }) => {
 
   if (moment(forDate).diff(moment(), 'seconds') < 0) {
     if (moment(toDate).diff(moment(), 'seconds') < 0) {
-      return <Countup toDate={toDate} crisis={crisis} />
+      return <Countup toDate={toDate} />
     }
     return (<div style={{ width: '80vw' }}>
-    <Link to={crisis ? "" : "cois"} className="link-right">
-      <img className="switch-logo" src={require(!crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
-    </Link>
     <div className='countdown-div'>
-      <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
+      <img className="logo" src={require('../../justicecon.png')} alt="logo "/>
           <div className='countdown-wrapper'>
             <>
-              <CurrentlyRunning crisis={crisis} />
+              <CurrentlyRunning />
             </>
           </div>
           <h1 className="arrow">↓</h1>
       </div>
-      <Timeline crisis={crisis} />
+      <Timeline />
     </div>);
   }
   
   return (
     <div style={{ width: '80vw' }}>
     <div className='countdown-div'>
-      <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
+      <img className="logo" src={require('../../justicecon.png')} alt="logo "/>
           <div className='countdown-wrapper'>
                   {days && (
                       <div className='countdown-item'>
@@ -88,7 +84,7 @@ const Countdown = ({ forDate, toDate, crisis }) => {
       <h3><a className="schedule-link" href="#day1">Apr 16</a><a className="schedule-link" href="#day2"> - </a><a className="schedule-link" href="#day3">18, 2021</a></h3>
       <h1 className="arrow">↓</h1>
     </div>
-    <Timeline crisis={crisis} />
+    <Timeline />
     </div>
   )
 }

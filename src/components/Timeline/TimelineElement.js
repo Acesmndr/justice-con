@@ -16,7 +16,6 @@ const TimelineElement = ({
   link,
   guests,
   hosts,
-  crisis,
 }) => {
   const addToCalendarUrl = convertToAddToCalendarUrl({ title, from, to, link });
 
@@ -28,10 +27,10 @@ const TimelineElement = ({
       contentArrowStyle={{ borderRight: '7px solid #212121' }}
       date={to ? `${moment(from).format('MMMM Do, h:mm a')} - ${moment(to).format('h:mm a')}` : moment(from).format('MMMM Do, h:mm a') }
       iconStyle={{ backgroundColor: '#e69b35', backgroundSize: 'fit', color: '#fff' }}
-      icon={<img className="event-logo" src={crisis ? require('../../crisislogo.png') : require('../../icon.png')} alt="product" />}
+      icon={<img className="event-logo" src={require('../../icon.png')} alt="product" />}
     >
       <div className="title">
-        <a href={'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">
+        <a data-tip="Visit video link" href={'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">
           {title}
         </a>
       </div>
@@ -45,21 +44,15 @@ const TimelineElement = ({
         <div className="hosts-and-guests">
           <div className="host">
             <div className="host-title">Host{hosts.length > 1 ? 's' : ''}</div>
-            {hosts.map(host => <div><img alt="Host" className="host-icon" src={require('../../host.png')} />{host}</div>)}
+            {hosts.map((host, idx) => <div key={`host${idx}`}><img alt="Host" className="host-icon" src={require('../../host.png')} />{host}</div>)}
           </div>
           {guests.length ?
           <div className="guests">
-            <div className="host-title">Guest{guests.length > 1 ? 's' : ''}</div>
-            {guests.map(guest => <div className="guest"><img alt="Guest" className="guest-icon" src={require('../../guest.png')} />{guest}</div>)}
+            <div className="guest-title">Guest{guests.length > 1 ? 's' : ''}</div>
+            {guests.map((guest, idx) => <div className="guest" key={`guest${idx}`}><img alt="Guest" className="guest-icon" src={require('../../guest.png')} />{guest}</div>)}
           </div> : null}
         </div>
       </div>
-      {/* <h3 className="vertical-timeline-element-title">{link ? <a href={link} target="_blank" rel="noopener noreferrer">{title}</a> : title}</h3> */}
-      {/* Hello */}
-      {/* <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4> */}
-      {/* <div className="vertical-timeline-element-description">
-        {description}
-      </div> */}
     </VerticalTimelineElement>);
 };
 

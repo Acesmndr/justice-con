@@ -2,9 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import './index.scss';
 import Timeline from '../Timeline/Timeline';
-import LinkElement from '../Timeline/LinkElement';
 
-const Countup = ({ toDate, crisis }) => {
+const Countup = ({ toDate }) => {
   const intervalRef = React.useRef(null);
   const [days, setDays] = React.useState(undefined);
   const [hours, setHours] = React.useState(undefined);
@@ -36,7 +35,7 @@ const Countup = ({ toDate, crisis }) => {
   return (
     <div style={{ width: '80vw' }}>
     <div className='countdown-div'>
-      <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
+      <img className="logo" src={require('../../justicecon.png')} alt="logo "/>
       <div className='countdown-wrapper'>
         <div className="break spacing-top" />
         {days && (
@@ -61,16 +60,13 @@ const Countup = ({ toDate, crisis }) => {
         )}
         <div className="break" />
         <div className="description">
-          since Justice Con 2020, a <strong>"By the fans, for the fans"</strong> event organized by <LinkElement title="ya_girlmeg" /> and <LinkElement title="thenerdqueens" />.
-          <br/>
-          The event has concluded successfully.
+          since <b>Justice Con 2021</b>
         </div>
       </div>
       <h3><a className="schedule-link" href="#day1">Apr 16</a> - <a className="schedule-link" href="#day2">18, 2021</a></h3>
-      <img className="jl-tshirt-logo" src={require('../../tshirt-design.png')} alt="product" />
       <h1 className="countup-arrow">↓</h1>
     </div>
-    <Timeline crisis={crisis} />
+    <Timeline />
     </div>
   )
 }

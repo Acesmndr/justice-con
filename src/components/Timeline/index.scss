@@ -31,7 +31,8 @@ h4.vertical-timeline-element-subtitle {
   width: inherit;
 }
 
-h1,h3 {
+h1,
+h3 {
   a.schedule-link {
     color: white;
     text-decoration: none;
@@ -46,7 +47,7 @@ h1,h3 {
     border-radius: 16px;
     filter: grayscale(0.6);
     &:hover {
-      filter: grayscale(0); 
+      filter: grayscale(0);
     }
   }
 }
@@ -72,6 +73,7 @@ h1,h3 {
 
 .event-details {
   display: flex;
+  flex-flow: wrap;
   flex-direction: row;
   text-align: left;
   margin: 16px;
@@ -97,35 +99,34 @@ h1,h3 {
       display: none;
     }
   }
-}
 
-.hosts-and-guests {
-  display: flex;
-  flex-direction: column;
-  margin: 8px 16px;
-}
-
-.host {
-  margin: 8px 0;
-}
-
-.host-title {
-  font-size: 10px;
-  margin-bottom: 2px;
-}
-
-.host-icon {
-  filter: invert(1);
-  width: 12px;
-  margin-right: 4px;
-}
-
-.guest-icon {
-  filter: invert(1);
-  width: 12px;
-  margin-right: 4px;
-}
-
-.guest {
-  margin: 4px 0;
+  .hosts-and-guests {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 16px;
+    .host {
+      margin: 8px 0;
+      .host-title {
+        font-size: 10px;
+        margin-bottom: 2px;
+      }
+      .host-icon {
+        filter: invert(1);
+        width: 12px;
+        margin-right: 4px;
+      }
+    }
+    .guests {
+      margin: 4px 0;
+      .guest-title {
+        font-size: 10px;
+        margin-bottom: 2px;
+      }
+      .guest-icon {
+        filter: invert(1);
+        width: 12px;
+        margin-right: 4px;
+      }
+    }
+  }
 }
