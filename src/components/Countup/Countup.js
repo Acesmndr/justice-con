@@ -2,8 +2,6 @@ import React from 'react';
 import moment from 'moment';
 import './index.scss';
 import Timeline from '../Timeline/Timeline';
-// import CurrentlyRunning from '../Timeline/CurrentRunning';
-import { Link } from 'react-router-dom';
 import LinkElement from '../Timeline/LinkElement';
 
 const Countup = ({ toDate, crisis }) => {
@@ -37,9 +35,6 @@ const Countup = ({ toDate, crisis }) => {
   
   return (
     <div style={{ width: '80vw' }}>
-    <Link to={crisis ? "" : "cois"} className="link-right">
-      <img className="switch-logo" src={require(!crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
-    </Link>
     <div className='countdown-div'>
       <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
       <div className='countdown-wrapper'>
@@ -71,7 +66,7 @@ const Countup = ({ toDate, crisis }) => {
           The event has concluded successfully.
         </div>
       </div>
-      <h3><a className="schedule-link" href="#day1">July 25</a> - <a className="schedule-link" href="#day2">26, 2020</a></h3>
+      <h3><a className="schedule-link" href="#day1">Apr 16</a> - <a className="schedule-link" href="#day2">18, 2021</a></h3>
       <img className="jl-tshirt-logo" src={require('../../tshirt-design.png')} alt="product" />
       <h1 className="countup-arrow">↓</h1>
     </div>

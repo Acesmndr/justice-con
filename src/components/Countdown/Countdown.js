@@ -61,9 +61,6 @@ const Countdown = ({ forDate, toDate, crisis }) => {
   
   return (
     <div style={{ width: '80vw' }}>
-    <Link to={crisis ? "" : "cois"} className="link-right">
-      <img className="switch-logo" src={require(!crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
-    </Link>
     <div className='countdown-div'>
       <img className="logo" src={require(crisis ? '../../crisis.png' : '../../justicecon.png')} alt="logo "/>
           <div className='countdown-wrapper'>
@@ -88,7 +85,7 @@ const Countdown = ({ forDate, toDate, crisis }) => {
                       </div>
                   )}
               </div>
-      <h3><a className="schedule-link" href="#day1">July 25</a> - <a className="schedule-link" href="#day2">26, 2020</a></h3>
+      <h3><a className="schedule-link" href="#day1">Apr 16</a><a className="schedule-link" href="#day2"> - </a><a className="schedule-link" href="#day3">18, 2021</a></h3>
       <h1 className="arrow">↓</h1>
     </div>
     <Timeline crisis={crisis} />
