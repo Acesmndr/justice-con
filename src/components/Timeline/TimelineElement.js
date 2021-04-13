@@ -13,7 +13,7 @@ const TimelineElement = ({
   from,
   to,
   title,
-  link,
+  link = 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A',
   guests,
   hosts,
 }) => {
@@ -30,7 +30,7 @@ const TimelineElement = ({
       icon={<img className="event-logo" src={require('../../icon.png')} alt="product" />}
     >
       <div className="title">
-        <a data-tip="Visit video link" href={'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">
+        <a data-tip="Visit video link" href={link} target="_blank" rel="noopener noreferrer">
           {title}
         </a>
       </div>

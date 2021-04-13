@@ -46,11 +46,11 @@ const CurrentlyRunning = () => {
   return <div className="currently-running">
     <div className="running-event-details">
         <div className="event-title">
-          <a data-tip="Visit video link" href={'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">{schedule.title}</a>
+          <a data-tip="Visit video link" href={schedule.link || 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">{schedule.title}</a>
         </div>
         <div className="break-row" />
         <div data-tip="View event" className="jc-event-logo">
-          <a data-tip="Visit video link" href={'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer"><img alt="Event logo" src={require('../../justicecon21.png')} /></a>
+          <a data-tip="Visit video link" href={schedule.link || 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer"><img alt="Event logo" src={require('../../justicecon21.png')} /></a>
         </div>
         <div className="hosts-and-guests">
           <div className="host">
@@ -67,7 +67,7 @@ const CurrentlyRunning = () => {
             <div>
               <img alt="Timing" className="timing-icon" src={require('../../clock.png')} />
               {schedule.to ? `${moment(schedule.from).format('h:mm a')} - ${moment(schedule.to).format('h:mm a')}` : moment(schedule.from).format('MMMM Do, h:mm a')}
-              <a data-tip="View panel" href={'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">
+              <a data-tip="View panel" href={schedule.link || 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'} target="_blank" rel="noopener noreferrer">
                 {
                   schedule.upcoming ?
                     <div className="status">Up next</div> :
