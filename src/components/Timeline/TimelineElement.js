@@ -5,7 +5,7 @@ import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 const convertToAddToCalendarUrl = ({ title, from, to, link }) => {
   const startTime = moment(from).format('YYYYMMDDTHHmmssZ');
   const endTime = moment(to).format('YYYYMMDDTHHmmssZ');
-  return encodeURI(`https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startTime}/${endTime}&text=Justice Con: ${title}&details=${link || 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'}`);
+  return encodeURI(`https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${startTime}/${endTime}&text=Justice Con: ${title}&details=Watch here: ${link || 'https://www.youtube.com/channel/UCmbXef0QoqdIfcXUMj_DD7A'}`);
 };
 
 const TimelineElement = ({
