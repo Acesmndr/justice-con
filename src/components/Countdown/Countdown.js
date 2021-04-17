@@ -89,7 +89,7 @@ const Countdown = ({ forDate, toDate }) => {
               3
             </a>
           </div>
-          <h1 className="arrow">↓</h1>
+          <h1 className="running-arrow">↓</h1>
         </div>
         <Timeline />
       </div>
