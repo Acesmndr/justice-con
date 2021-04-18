@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import './index.scss';
+import LinkElement from '../Timeline/LinkElement';
 import Timeline from '../Timeline/Timeline';
 
 const Countup = ({ toDate }) => {
@@ -60,7 +61,11 @@ const Countup = ({ toDate }) => {
         )}
         <div className="break" />
         <div className="description">
-          since <b>Justice Con 2021</b>
+          since <LinkElement title="justice_con" text="Justice Con 2021" />,
+          <br/>
+          a <LinkElement title="justice_con" text="by the fans, for the fans" /> event
+          <br/>
+          organized by <LinkElement title="ya_girlmeg" text="Wonder Meg" /> and <LinkElement title="thenerdqueens" text="The Nerd Queens" />
         </div>
       </div>
       <h3><a className="schedule-link" href="#day1">Apr 16</a><a className="schedule-link" href="#day2"> - </a><a className="schedule-link" href="#day3">18, 2021</a></h3>
