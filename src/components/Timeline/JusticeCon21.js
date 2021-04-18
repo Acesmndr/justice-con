@@ -70,7 +70,7 @@ const JC_DAY_ONE = [{
   title: 'The Power of Snyderverse: Restoring Mental Health',
   link: 'https://youtu.be/Grqmx-HrHcs',
   hosts: ['Matteo DG @TheFusioner'],
-  guests: ['Jax (@MnMJax)', 'Darius (@mockingjaygrimes)'],
+  guests: ['Jax (@MnMJax)', 'Darius (@mockjaygrimes)'],
 }, {
   from: 'Fri, 16 Apr 2021 14:45:00 GMT-0400',
   to: 'Fri, 16 Apr 2021 16:00:00 GMT-0400',
@@ -156,7 +156,7 @@ const JC_DAY_TWO = [{
   title: 'Deep Dive Into Zack Snyder\'s Justice League With Zack Snyder',
   link: 'https://youtu.be/FpLQaWzes00',
   hosts: ['The Nerd Queens', 'Wonder Meg'],
-  guests: ['Zack Snyder'],
+  guests: ['Zack Snyder', 'Chris Terrio'],
 }, {
   from: 'Sat, 17 Apr 2021 20:30:00 GMT-0400',
   to: 'Sat, 17 Apr 2021 21:30:00 GMT-0400',
